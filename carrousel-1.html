@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .carrousel{
+        /*width: 100%;*/
+        overflow-x: scroll;
+        padding: 30px;
+        position: relative;
+    }
+    .carrousel::-webkit-scrollbar{
+        display: none;
+    }
+    .carrousel::-webkit-scrollbar-thumb {
+    background:grey;
+    border-radius: 4px;
+}
+    .carrousel__container{
+        white-space: nowrap;
+        margin: 70px 0px;
+        padding-bottom: 10px;
+    }
+    .carrousel__item{
+        background-color:pink;
+        width: 200px;
+        height: 250px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 10px;
+        display: inline-block;
+        cursor: pointer;
+        transition: 450ms all;
+        transform-origin: center left;
+    }
+    .carrousel__item:hover ~ .carrousel__item {
+        transform: translate3d(100px, 0, 0);
+    }
+    .carrousel__container:hover .carrousel__item {
+        opacity: 0.3;
+    }
+    .carrousel__container:hover .carrousel__item:hover{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+</style>
+<body>
+    <section class="carrousel">
+        <div class="carrousel__container">
+            <div class="carrousel__item">
+
+            </div>
+            <div class="carrousel__item">
+
+            </div>
+            <div class="carrousel__item">
+
+            </div>
+            <div class="carrousel__item">
+
+            </div>
+            <div class="carrousel__item">
+
+            </div>
+            <div class="carrousel__item">
+
+            </div>
+            <div class="carrousel__item">
+
+            </div>
+            <div class="carrousel__item">
+
+            </div>
+            <div class="carrousel__item">
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
